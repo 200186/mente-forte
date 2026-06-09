@@ -34,9 +34,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;
 .nav-links{display:flex;gap:28px}
 .nav-links a{font-size:13px;color:var(--t2);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--t1)}
-.btn-cta-nav{padding:9px 22px;border-radius:50px;background:var(--primary);color:#fff;
+.btn-cta-nav{padding:9px 22px;border-radius:50px;background:var(--primary);color:#fff !important;
   font-family:'Sora',sans-serif;font-size:13px;font-weight:600;border:none;cursor:pointer;
-  transition:transform .15s,box-shadow .2s;text-decoration:none}
+  transition:transform .15s,box-shadow .2s;
+  text-decoration:none !important}
 .btn-cta-nav:hover{transform:scale(1.03);box-shadow:0 4px 20px var(--primary-glow)}
 @media(max-width:768px){.nav-links{display:none};nav{padding:12px 20px}}
 
@@ -85,11 +86,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 .btn-red{padding:16px 32px;border-radius:14px;
-  background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;
+  background:linear-gradient(135deg,var(--red),var(--red2));color:#fff !important;
   font-family:'Sora',sans-serif;font-size:15px;font-weight:700;border:none;cursor:pointer;
   display:flex;align-items:center;gap:10px;
   box-shadow:0 8px 32px var(--red-glow);transition:transform .2s,box-shadow .2s;
-  text-decoration:none}
+  text-decoration:none !important}
 .btn-red:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(232,64,64,.35)}
 
 .btn-ghost{padding:16px 28px;border-radius:14px;background:transparent;
@@ -247,12 +248,12 @@ section{position:relative;padding:100px 24px;overflow:hidden}
 
 .btn-stripe{width:100%;padding:14px;border-radius:12px;
   background:linear-gradient(135deg,var(--primary),var(--primary2));
-  color:#fff;font-family:'Sora',sans-serif;
+  color:#fff !important;font-family:'Sora',sans-serif;
   font-size:14px;font-weight:700;border:none;cursor:pointer;
   box-shadow:0 4px 24px var(--primary-glow);
   transition:transform .2s,box-shadow .2s;position:relative;z-index:1;
   display:flex;align-items:center;justify-content:center;gap:8px;
-  text-decoration:none}
+  text-decoration:none !important}
 .btn-stripe:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(107,61,232,.4)}
 .stripe-note{text-align:center;margin-top:12px;font-size:11px;
   color:rgba(255,255,255,.3);position:relative;z-index:1}
