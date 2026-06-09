@@ -605,7 +605,6 @@ function showToast(msg, type = 'success') {
   const ico = document.getElementById('toast-icon');
   const m   = document.getElementById('toast-msg');
   t.className = 'toast ' + type;
-  ico.textContent = type === 'success' ? '✅' : '⚠️';
   m.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 4000);
